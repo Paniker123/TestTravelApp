@@ -8,4 +8,5 @@
     <color name="btn_sing_up_with_facebook_text">#fff</color>
     <color name="sing_in_activity_textView_sing_in">#fff</color>
     <color name="btn_sing_up">#fff</color>
+    <color name="btn_sing_in_activity_sing_in">#5078ff</color>
 </resources>

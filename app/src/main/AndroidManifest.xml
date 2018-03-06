@@ -35,8 +35,14 @@
         </activity>
         <activity
             android:name=".SingInActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".StartingActivity"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".StartingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+
+        </activity>
     </application>
 
 </manifest>

@@ -22,4 +22,5 @@
     <string name="btn_sing_in">Sing In</string>
     <string name="sing_up_activity_textView_little_question_action">Create New</string>
     <string name="sing_in_activity_textView_little_question">Don`t have an account?</string>
+    <string name="starting_activity_textView_little_description">Best way to organize travels</string>
 </resources>

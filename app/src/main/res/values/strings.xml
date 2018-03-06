@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TestTravelApp</string>
+    <string name="sing_up_activity_hint_name">Vitalii Suslin</string>
+    <string name="sing_up_activity_hint_password">******</string>
+    <string name="sing_up_activity_hint_email">shakrek@gmail.com</string>
+    <string name="btn_sing_up">Sing Up</string>
+    <string name="btn_sing_up_with_facebook">Sing Up with FACEBOOK</string>
+    <string name="sing_up_activity_textView_sing_up">Sing Up</string>
+    <string name="sing_up_activity_textView_full_name">Full name</string>
+    <string name="sing_up_activity_textView_email">Email</string>
+    <string name="sing_up_activity_textView_password">Password</string>
+    <string name="sing_up_icon">Sing up icon</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="sing_up_textView_little_bottom_question">Already have account?</string>
+    <string name="sing_up_textView_little_message_action_sing_in">Sing in</string>
+</resources>

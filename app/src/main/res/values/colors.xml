@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#5078ff</color>
     <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#43e3ff</color>
     <color name="sing_up_activity_textView_sing_up">#fff</color>
     <color name="btn_sing_up_text">#fff</color>
     <color name="btn_sing_up_with_facebook_text">#fff</color>

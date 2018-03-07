@@ -3,7 +3,6 @@
     package="com.woodman.testtravelapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
 
     <application
@@ -14,35 +13,41 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SingUpActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".activity.SingUpActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:finishOnTaskLaunch="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SING_UP" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:finishOnTaskLaunch="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <!-- <action android:name="android.intent.action.STARTER" /> -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoadingActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".activity.SingInActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:finishOnTaskLaunch="true"
+            >
             <intent-filter>
-                <action android:name="android.intent.action.STARTER" />
-                <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+                <action android:name="android.intent.action.SING_IN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".SingInActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".StartingActivity"
+            android:name=".activity.StartingActivity"
             android:theme="@style/AppTheme.NoActionBar"
+            android:finishOnTaskLaunch="true"
             >
-
+            <intent-filter>
+                <action android:name="android.intent.action.STARTING" />
+            </intent-filter>
         </activity>
     </application>
-
 </manifest>

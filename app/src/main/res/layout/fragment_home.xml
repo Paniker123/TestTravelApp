@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.woodman.testtravelapp.fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/background_gradient" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:text="@string/home_fragment_textView_header"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/layoutTravelByPanel"
+        android:layout_marginBottom="50dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutTravelByPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/text_view_plane_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:padding="24dp"
+                android:background="@drawable/background_rectangle"
+                android:drawableTop="@drawable/ic_plane"
+                android:text="@string/home_fragment_textView_plane"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/text_view_train_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="24dp"
+                android:background="@drawable/background_rectangle"
+
+                android:drawableTop="@drawable/ic_train"
+                android:text="@string/home_fragment_textView_train"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_view_car_home_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="24dp"
+            android:background="@drawable/background_rectangle"
+
+            android:drawableTop="@drawable/ic_car"
+            android:text="@string/home_fragment_textView_car"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</RelativeLayout>

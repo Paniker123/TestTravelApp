@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.woodman.testtravelapp.activity.EditProfileActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/background_gradient"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_view_profile_avatar_edit_activity"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            app:srcCompat="@drawable/ic_account_circle" />
+
+        <TextView
+            android:id="@+id/text_view_user_name_edit_profile_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User name"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="@string/edit_profile_activity_textView_private_details"
+            android:textSize="18sp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/edit_profile_activity_edit_text_bg"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/edit_activity_textView_email" />
+
+            <EditText
+                android:id="@+id/edit_text_email_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|end"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:textColor="@color/edit_profile_activity_edit_text"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionSend"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@color/edit_profile_activity_edit_text_bg"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/edit_text_password_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|end"
+
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="1234567890"
+                android:textColor="@color/edit_profile_activity_edit_text"
+                android:textSize="24sp"
+                android:inputType="textPassword"
+                android:imeOptions="actionSend"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:background="@color/edit_profile_activity_edit_text_bg"
+                android:orientation="horizontal"
+                android:padding="7dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/edit_profile_activity_textView_grander" />
+
+                <EditText
+                    android:id="@+id/edit_text_gender_edit_profile_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|end"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:maxEms="6"
+                    android:text="male"
+                    android:inputType="text"
+                    android:textColor="@color/edit_profile_activity_edit_text"
+                    android:imeOptions="actionSend"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@color/edit_profile_activity_edit_text_bg"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/edit_profile_activity_textView_age" />
+
+                <EditText
+                    android:id="@+id/edit_text_age_edit_profile_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|end"
+                    android:inputType="number"
+                    android:imeOptions="actionSend"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:maxEms="3"
+                    android:text="20"
+                    android:textColor="@color/edit_profile_activity_edit_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@color/edit_profile_activity_edit_text_bg"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/edit_text_activity_textView_phone_number" />
+
+            <EditText
+                android:id="@+id/edit_text_phone_edit_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:ems="13"
+                android:maxEms="13"
+                android:gravity="center|end"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="@string/textView_example_phone_380999999999"
+                android:inputType="phone"
+                android:textColor="@color/edit_profile_activity_edit_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

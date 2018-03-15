@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.woodman.testtravelapp.fragment.TicketFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/background_gradient" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_view_ticket_header_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="16dp"
+            android:background="@drawable/ticket_icon" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rectangle_stroke_wight"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_btn_round"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_btn_background"
+                android:button="@android:color/transparent"
+                android:text="Round"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_one_way"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_btn_background"
+                android:button="@android:color/transparent"
+                android:text="One Way"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_multi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_btn_background"
+                android:button="@android:color/transparent"
+                android:text="Multi"
+                android:textAlignment="center" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_text_from_ticket_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_location_grey"
+                android:hint="@string/hint_from_fragment_ticket"
+                android:inputType="text"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edit_text_departed_date_ticket_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_date_range_grey"
+                android:hint="@string/hint_departure_date_fragment_ticket"
+                android:inputType="text"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edit_text_number_passengers_ticket_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_person_outline"
+                android:hint="@string/hint_number_of_passengers_fragment_ticket"
+                android:inputType="number"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+            <EditText
+                android:id="@+id/edit_text_to_ticket_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_location_grey"
+                android:hint="@string/hint_to_fragment_ticket"
+                android:inputType="text"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edit_text_return_date_ticket_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_date_range_grey"
+                android:hint="@string/hint_return_date_fragment_ticket"
+                android:inputType="date"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edit_text_ticket_class_ticket_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_star_grey"
+                android:hint="@string/hint_first_class_fragment_ticket"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/btn_search_ticket_fragment"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle_gradient"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_search_lights" />
+
+
+</LinearLayout>

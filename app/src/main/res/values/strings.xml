@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Travel App</string>
-    <string name="sing_up_activity_hint_name">Vitalii Suslin</string>
+    <string name="sing_up_activity_hint_name">Full Name</string>
     <string name="sing_up_activity_hint_password">**********</string>
-    <string name="sing_up_activity_hint_email">shakrek@gmail.com</string>
+    <string name="sing_up_activity_hint_email">example@example.com</string>
     <string name="btn_sing_up">Sing Up</string>
-    <string name="btn_sing_up_with_facebook" >Sing Up with FACEBOOK</string>
+    <string name="btn_sing_up_with_facebook">Sing Up with FACEBOOK</string>
     <string name="sing_up_activity_textView_sing_up">Sing Up</string>
     <string name="sing_up_activity_textView_full_name">Full Name</string>
     <string name="sing_up_activity_textView_email">E-Mail</string>
@@ -17,10 +17,101 @@
     <string name="sing_in_activity_textView_logo">Sing In</string>
     <string name="sing_in_activity_textView_email">E-Mail</string>
     <string name="sing_in_activity_textView_password">Password</string>
-    <string name="sing_in_activity_hint_email">shakrek@gmail.com</string>
+    <string name="sing_in_activity_hint_email">example@example.com</string>
     <string name="sing_in_activity_hint_password">***********</string>
     <string name="btn_sing_in">Sing In</string>
     <string name="sing_up_activity_textView_little_question_action">Create New</string>
     <string name="sing_in_activity_textView_little_question">Don`t have an account?</string>
     <string name="starting_activity_textView_little_description">Best way to organize travels</string>
+
+    <!--Error notifications-->
+    <string name="success">Success!</string>
+    <string name="fail">Fail!</string>
+    <string name="fail_sing_in">Fail sing in!</string>
+    <string name="error_missing_full_name">Enter your full name!</string>
+    <string name="error_missing_email">Enter your email!</string>
+    <string name="error_email_mistake">Please enter valid email</string>
+    <string name="error_missing_password">Enter your password!</string>
+    <string name="error_password_mistake">Enter 6 or more symbols!</string>
+    <string name="error_missing_gender">Enter your gender!</string>
+    <string name="error_gender_mistake">Enter male or female!</string>
+    <string name="error_missing_age">Enter your age!</string>
+    <string name="error_age_mistake">You can enter age to </string>
+    <string name="error_missing_phone">Enter your phone number!</string>
+    <string name="error_phone_mistake">You need enter + and 12 numbers!</string>
+
+    <string name="title_notification_dialog">Notification</string>
+    <string name="title_help_info_dialog">Help</string>
+    <string name="message_help_info_dialog">This is a travel app for exam developer skill.\n
+        If you want to find some tour,\n click \"Travel guide\" and have a fun.\n
+        User personal data store in fire base.\n Windows 2,3 and 6 are validate.\n
+        For change user personal data,\n open settings and click to the view which\n you want to edit.
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile_activity">Profile</string>
+    <string name="title_edit_profile_activity">Edit Profile</string>
+
+    <string name="home_fragment_textView_plane">Plane</string>
+    <string name="home_fragment_textView_train">Train</string>
+    <string name="home_fragment_textView_car">Car</string>
+    <string name="home_fragment_textView_header">You will travel by?</string>
+    <string name="navigation_tours">Tours</string>
+    <string name="navigation_explore">Explore</string>
+    <string name="navigation_profile">Profile</string>
+
+    <string name="fragment_title_home">Home</string>
+    <string name="fragment_title_tours">Tours</string>
+    <string name="fragment_title_explore">Explore</string>
+    <string name="tours_fragment_hint_search">Search</string>
+    <string name="explore_fragment_textView_popular_tours">Popular Tours</string>
+    <string name="explore_fragment_textView_new_offers_tours">New Offers Tours</string>
+    <string name="explore_fragment_textView_best_destinations">Best Destinations</string>
+    <string name="profile_activity_textView_social_networks">Social Networks</string>
+    <string name="profile_activity_textView_travel_guide">Travel guide</string>
+    <string name="profile_activity_textView_help">Help</string>
+    <string name="profile_activity_textView_notifications">Notifications</string>
+    <string name="profile_activity_textView_feedback">Feedback</string>
+    <string name="edit_profile_activity_textView_private_details">Private Details</string>
+    <string name="edit_activity_textView_email">Email</string>
+    <string name="edit_profile_activity_textView_grander">Grander</string>
+    <string name="edit_profile_activity_textView_age">Age</string>
+    <string name="edit_text_activity_textView_phone_number">Phone Number</string>
+
+
+    <string name="fragment_search_travel_btn_edit_search">Edit Search</string>
+    <string name="textView_change_full_name_dialog_fragment">Change Full Name</string>
+
+    <string name="hint_enter_your_new_name">Enter your new name</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="textView_change_email">Change email</string>
+    <string name="hint_enter_your_new_email">Enter your new email</string>
+
+    <string name="title_plane_ticket_fragment">Plane Ticket</string>
+    <string name="title_car_ticket_fragment">Car Ticket</string>
+    <string name="title_train_ticket_fragment">Train Ticket</string>
+
+    <string name="title_plane_result_fragment">Plane Result</string>
+    <string name="title_car_result_fragment">Car Result</string>
+    <string name="title_train_result_fragment">Train Result</string>
+
+    <string name="hint_from_fragment_ticket">From</string>
+    <string name="hint_to_fragment_ticket">To</string>
+    <string name="hint_first_class_fragment_ticket">First class</string>
+    <string name="hint_number_of_passengers_fragment_ticket">Number of passengers</string>
+    <string name="btn_search_flights">Search Flights</string>
+    <string name="btn_search_trains">Search Trains</string>
+    <string name="btn_search_cars">Search Cars</string>
+    <string name="hint_departure_date_fragment_ticket">Departure date</string>
+    <string name="hint_return_date_fragment_ticket">Return date</string>
+    <string name="textView_your_travel_price_fragment_ticket_price">Your travel price :</string>
+    <string name="btn_text_i_can_book">I Can Book</string>
+    <string name="btn_find_now_fragment_ticket_price">Find Now</string>
+    <string name="text_view_min_price_fragment_ticket_price">Min Price :</string>
+    <string name="text_view_average_price_fragment_ticket_price">Average Price :</string>
+    <string name="text_view_maximum_price_fragment_ticket_price">Maximum Price :</string>
+    <string name="textView_example_phone_380999999999">+380999999999</string>
+
+
 </resources>

@@ -3,6 +3,7 @@
     package="com.woodman.testtravelapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
 
     <application
@@ -11,11 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
         <activity
             android:name=".activity.SingUpActivity"
-            android:theme="@style/AppTheme.NoActionBar"
             android:finishOnTaskLaunch="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
             >
             <intent-filter>
                 <action android:name="android.intent.action.SING_UP" />
@@ -23,18 +26,21 @@
         </activity>
         <activity
             android:name=".activity.LoadingActivity"
-            android:theme="@style/AppTheme.NoActionBar"
             android:finishOnTaskLaunch="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.SingInActivity"
-            android:theme="@style/AppTheme.NoActionBar"
             android:finishOnTaskLaunch="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
             >
             <intent-filter>
                 <action android:name="android.intent.action.SING_IN" />
@@ -42,12 +48,46 @@
         </activity>
         <activity
             android:name=".activity.StartingActivity"
-            android:theme="@style/AppTheme.NoActionBar"
             android:finishOnTaskLaunch="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
             >
             <intent-filter>
                 <action android:name="android.intent.action.STARTING" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.TRAVEL_GUIDE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="portrait"
+            android:label="@string/title_profile_activity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.PROFILE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:parentActivityName=".activity.ProfileActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/title_edit_profile_activity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT_PROFILE" />
+            </intent-filter>
+        </activity>
     </application>
+
 </manifest>

@@ -5,114 +5,119 @@
     android:layout_height="match_parent"
     tools:context="com.woodman.testtravelapp.activity.SingInActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <ImageView
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/background_gradient" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-    </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_gradient" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:contentDescription="@string/sing_up_icon"
-            android:src="@drawable/logo" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/sing_in_activity_textView_logo"
-            android:textAlignment="center"
-            android:textColor="@color/sing_in_activity_textView_sing_in"
-            android:textSize="25sp" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/background_rectangle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="270dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:padding="30dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sing_in_activity_textView_email"
-            />
-        <EditText
-            android:id="@+id/edit_text_sing_in_email"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/ic_mail_outline"
-            android:hint="@string/sing_in_activity_hint_email"
-            android:inputType="textEmailAddress"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sing_in_activity_textView_password"
-            />
-        <EditText
-            android:id="@+id/edit_text_sing_in_password"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/sing_up_icon"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sing_in_activity_textView_logo"
+                android:textAlignment="center"
+                android:textColor="@color/sing_in_activity_textView_sing_in"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/ic_visibility"
-            android:inputType="textPassword"
-            android:hint="@string/sing_in_activity_hint_password"
-            />
-        <Button
-            android:id="@+id/btn_sing_in_sing_in_activity"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="270dp"
+            android:background="@drawable/background_rectangle"
+            android:orientation="vertical"
+            android:padding="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sing_in_activity_textView_email" />
+
+            <EditText
+                android:id="@+id/edit_text_sing_in_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_mail_outline"
+                android:hint="@string/sing_in_activity_hint_email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sing_in_activity_textView_password" />
+
+            <EditText
+                android:id="@+id/edit_text_sing_in_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_visibility"
+                android:hint="@string/sing_in_activity_hint_password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_sing_in_sing_in_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_gradient"
+                android:text="@string/btn_sing_in"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_sing_up" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_sing_in"
-            android:textAllCaps="false"
-            android:background="@drawable/rectangle_gradient"
-            android:textColor="@color/btn_sing_up"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        >
-        <TextView
-            android:text="@string/sing_in_activity_textView_little_question"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/sing_in_activity_textView_create_new"
-            android:layout_marginStart="8dp"
-            android:text="@string/sing_up_activity_textView_little_question_action"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sing_in_activity_textView_little_question" />
+
+            <TextView
+                android:id="@+id/sing_in_activity_textView_create_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/sing_up_activity_textView_little_question_action"
+                android:textStyle="bold" />
+        </LinearLayout>
 
 
 </RelativeLayout>

@@ -9,4 +9,18 @@
     <color name="sing_in_activity_textView_sing_in">#fff</color>
     <color name="btn_sing_up">#fff</color>
     <color name="btn_sing_in_activity_sing_in">#5078ff</color>
+    <color name="hotel_item_textView_hotel_name">#000</color>
+    <color name="btn_search">#fff</color>
+    <color name="edit_profile_activity_edit_text">#5078ff</color>
+    <color name="dialog_btn_text">#5078ff</color>
+    <color name="edit_profile_activity_edit_text_bg">#1800c8ff</color>
+    <color name="textColorBlack">#000</color>
+    <color name="btn_search_lights">#fff</color>
+    <color name="btn_text">#fff</color>
+    <color name="btn_text_grey">#c0c0c0</color>
+    <color name="btn_bg_wight">#fff</color>
+    <color name="textView_your_travel_price">#fff</color>
+    <color name="btn_i_can_book_text_wight">#fff</color>
+    <color name="btn_i_can_book_text">#5078ff</color>
+    <color name="text_view_price">#033543</color>
 </resources>

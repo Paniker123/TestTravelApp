@@ -38,19 +38,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/sing_up_activity_textView_full_name" />
+                    android:text="@string/sign_up_activity_textView_full_name" />
 
                 <EditText
                     android:id="@+id/edit_text_sing_up_activity_full_name"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawableEnd="@drawable/ic_person_outline"
-                    android:hint="@string/sing_up_activity_hint_name" />
+                    android:hint="@string/sign_up_activity_hint_name" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/sing_up_activity_textView_email" />
+                    android:text="@string/sign_up_activity_textView_email" />
 
                 <EditText
                     android:id="@+id/edit_text_sing_up_activity_email"
@@ -58,13 +58,13 @@
                     android:layout_height="match_parent"
                     android:drawableEnd="@drawable/ic_mail_outline"
                     android:drawablePadding="20dp"
-                    android:hint="@string/sing_up_activity_hint_email"
+                    android:hint="@string/sign_up_activity_hint_email"
                     android:inputType="textEmailAddress" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/sing_up_activity_textView_password" />
+                    android:text="@string/sign_up_activity_textView_password" />
 
                 <EditText
                     android:id="@+id/edit_text_sing_up_activity_password"
@@ -72,7 +72,7 @@
                     android:layout_height="match_parent"
                     android:drawableEnd="@drawable/ic_visibility"
                     android:drawablePadding="20dp"
-                    android:hint="@string/sing_up_activity_hint_password"
+                    android:hint="@string/sign_up_activity_hint_password"
                     android:inputType="textPassword" />
 
 
@@ -82,7 +82,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/rectangle_gradient"
-                    android:text="@string/btn_sing_up"
+                    android:text="@string/btn_sign_up"
                     android:textAllCaps="false"
                     android:textColor="@color/btn_sing_up_text" />
 
@@ -92,7 +92,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/rectangle_gradient_fb"
-                    android:text="@string/btn_sing_up_with_facebook"
+                    android:text="@string/btn_sign_up_with_facebook"
                     android:textAllCaps="false"
                     android:textColor="@color/btn_sing_up_with_facebook_text" />
             </LinearLayout>
@@ -108,14 +108,14 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:contentDescription="@string/sing_up_icon"
+                android:contentDescription="@string/sign_up_icon"
                 android:src="@drawable/logo" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/sing_up_activity_textView_sing_up"
+                android:text="@string/sign_up_activity_textView_sing_up"
                 android:textColor="@color/sing_up_activity_textView_sing_up"
                 android:textSize="25sp" />
         </LinearLayout>
@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="@string/sing_up_textView_little_message_action_sing_in"
+                android:text="@string/sign_up_textView_little_message_action_sing_in"
                 android:textStyle="bold" />
         </LinearLayout>
 

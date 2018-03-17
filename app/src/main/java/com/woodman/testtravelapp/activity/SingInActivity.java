@@ -71,7 +71,7 @@ public class SingInActivity extends AppCompatActivity {
                 startActivity(intent);
                         } else {
                             Log.w(TAG,task.getException());
-                            Toast.makeText(SingInActivity.this,getString(R.string.fail_sing_in),Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SingInActivity.this,getString(R.string.fail_sign_in),Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
